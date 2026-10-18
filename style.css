@@ -1,37 +1,78 @@
+* /*Seletor Universal*/
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root /*declarando variáveis*/
 {
     --black: #11151C;
     --white: #D9D9D9;
-    --bacground: #EFD6AC;
+    --background: #EFD6AC;
     --base-color: #364156;
     --smoke-rose: #7d4e57;
     --rosy-copper: #D66853;
 }
 
-h1
+body
 {
-    color: var(--black);
-    text-shadow: 2px 2px 0 rgba(125, 78, 87, 0.50);
-    font-family: "Inter", sans-serif;
-    font-size: 96;
-    font-weight: 700;
-    font-style: normal;
-    line-height: normal;
+    background-color: var(--background);
+    background-image: url(assets/paper-effect.png);
+    background-size: cover;
+    font-family: Poppins;
 }
 
-.tabs
+header
 {
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: row;
 }
-.left-tabs
+
+nav
 {
     width: 595px;
     height: 70px;
+
+    ul
+    {
+        justify-content: center;
+        list-style-type: none;
+        display: flex;
+        gap: 51px;
+
+        color: var(--white);
+        text-shadow: 1px 1px 0px var(--rosy-copper);
+        text-align: center;
+        font-weight: 700;
+        line-height: 62px;
+        font-style: normal;
+    }
 }
 
-.right-tabs
+.banner-logo
 {
-    width: 595px;
-    height: 70px;
+    width: 170px;
+    height: 180px;
+    margin: 0px 25px 40px 25px; 
 }
+
+.body-copy
+{
+    align-items: center;
+    justify-content: center;
+
+    h1
+    {
+        color: var(--black);
+        text-shadow: 2px 2px 0 rgba(125, 78, 87, 0.50);
+        font-family: "Inter", sans-serif;
+        font-size: 96px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+    }
+}
+
