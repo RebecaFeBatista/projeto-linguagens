@@ -1,1 +1,37 @@
+:root /*declarando variáveis*/
+{
+    --black: #11151C;
+    --white: #D9D9D9;
+    --bacground: #EFD6AC;
+    --base-color: #364156;
+    --smoke-rose: #7d4e57;
+    --rosy-copper: #D66853;
+}
 
+h1
+{
+    color: var(--black);
+    text-shadow: 2px 2px 0 rgba(125, 78, 87, 0.50);
+    font-family: "Inter", sans-serif;
+    font-size: 96;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+}
+
+.tabs
+{
+    display: flex;
+    flex-direction: row;
+}
+.left-tabs
+{
+    width: 595px;
+    height: 70px;
+}
+
+.right-tabs
+{
+    width: 595px;
+    height: 70px;
+}
